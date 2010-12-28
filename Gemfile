@@ -32,3 +32,5 @@ gem 'ruby-debug'
 
 gem 'mongrel'
 gem 'oauth2'
+gem 'json'
+gem 'fbgraph'
