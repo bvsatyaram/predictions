@@ -1,0 +1,10 @@
+<h1>Welcome to Predictions</h1>
+<% if @reauthorize %>
+  <p>You need to authorize Predictions to access some of your details for it to work. Please click the following link to authorize.</p>
+  <p><%= link_to_function "Authorize Predictions", "#{raw authorization_redirection_js}" %></p>
+<% else %>
+  <p>Please wait while we redirect you for authorization. </p>
+  <script type ="text/javascript">
+  <%= raw authorization_redirection_js %>
+  </script>
+<% end %>

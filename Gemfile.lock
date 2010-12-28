@@ -28,6 +28,7 @@ GEM
       activemodel (= 3.0.3)
       activesupport (= 3.0.3)
     activesupport (3.0.3)
+    addressable (2.2.2)
     arel (2.0.6)
     builder (2.1.2)
     cgi_multipart_eof_fix (2.5.0)
@@ -35,6 +36,10 @@ GEM
     daemons (1.1.0)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    faraday (0.5.3)
+      addressable (~> 2.2.2)
+      multipart-post (~> 1.0.1)
+      rack (>= 1.1.0, < 2)
     fastthread (1.0.7)
     gem_plugin (0.2.3)
     i18n (0.5.0)
@@ -50,6 +55,11 @@ GEM
       daemons (>= 1.0.3)
       fastthread (>= 1.0.1)
       gem_plugin (>= 0.2.3)
+    multi_json (0.0.5)
+    multipart-post (1.0.1)
+    oauth2 (0.1.0)
+      faraday (~> 0.5.0)
+      multi_json (~> 0.0.4)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -86,6 +96,7 @@ PLATFORMS
 
 DEPENDENCIES
   mongrel
+  oauth2
   rails (= 3.0.3)
   ruby-debug
   sqlite3-ruby
