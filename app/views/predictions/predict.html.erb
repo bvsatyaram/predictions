@@ -1,2 +1,17 @@
-<p>The access token is: <%= session[:access_token] %></p>
-<p>You <%= @prediction.full_description %></p>
+<style type="text/css">
+  body {
+    width: 90%;
+  }
+
+  p {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: green;
+  }
+</style>
+<p>
+  <%= image_tag "/images/predictions.jpg" %> <br />
+  <%= @prediction.full_description %>
+</p>
